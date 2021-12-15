@@ -1,0 +1,27 @@
+NAME
+    Wikibase::WQS::SPARQL::Result - Processing Wikidata Query Service SPARQL
+    result.
+
+SEE ALSO
+    Wikibase::WQS::SPARQL::Query::Count
+        Simple SPARQL Wikibase count query.
+
+    Wikibase::WQS::SPARQL::Query::Select
+        TODO
+
+REPOSITORY
+    <https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL-Result>
+
+AUTHOR
+    Michal Josef Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    © Michal Josef Špaček 2020-2021
+
+    BSD 2-Clause License
+
+VERSION
+    0.01
+
