@@ -14,15 +14,15 @@ author_requires 'Test::NoWarnings' => 0;
 author_requires 'Test::Pod' => 0;
 author_requires 'Test::Pod::Coverage' => 0;
 license 'bsd';
-name 'Wikibase-WQS-SPARQL-Result';
+name 'WQS-SPARQL-Result';
 perl_version 5.006002;
 readme_from 'Result.pm';
 recursive_author_tests('xt');
 requires 'Class::Utils' => 0.03;
 requires 'Error::Pure' => 0.15;
-resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL-Result/issues',
-resources 'homepage' => 'https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL-Result';
-resources 'repository' => 'git://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL-Result';
+resources 'bugtracker' => 'https://github.com/michal-josef-spacek/WQS-SPARQL-Result/issues',
+resources 'homepage' => 'https://github.com/michal-josef-spacek/WQS-SPARQL-Result';
+resources 'repository' => 'git://github.com/michal-josef-spacek/WQS-SPARQL-Result';
 test_requires 'File::Object' => 0;
 test_requires 'Test::More' => 0;
 test_requires 'Test::NoWarnings' => 0;

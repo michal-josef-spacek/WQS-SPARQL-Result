@@ -4,6 +4,7 @@ author:
   - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
   ExtUtils::MakeMaker: 6.59
+  File::Object: 0
   Test::More: 0
   Test::NoWarnings: 0
 configure_requires:
@@ -15,7 +16,7 @@ license: bsd
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: Wikibase-WQS-SPARQL-Result
+name: WQS-SPARQL-Result
 no_index:
   directory:
     - inc
@@ -26,8 +27,8 @@ requires:
   Error::Pure: 0.15
   perl: 5.6.2
 resources:
-  bugtracker: https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL-Result/issues
-  homepage: https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL-Result
+  bugtracker: https://github.com/michal-josef-spacek/WQS-SPARQL-Result/issues
+  homepage: https://github.com/michal-josef-spacek/WQS-SPARQL-Result
   license: http://opensource.org/licenses/bsd-license.php
-  repository: git://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL-Result
+  repository: git://github.com/michal-josef-spacek/WQS-SPARQL-Result
 version: '0.01'

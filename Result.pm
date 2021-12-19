@@ -1,4 +1,4 @@
-package Wikibase::WQS::SPARQL::Result;
+package WQS::SPARQL::Result;
 
 use strict;
 use warnings;
@@ -47,7 +47,7 @@ __END__
 
 =head1 NAME
 
-Wikibase::WQS::SPARQL::Result - Processing Wikidata Query Service SPARQL result.
+WQS::SPARQL::Result - Processing Wikidata Query Service SPARQL result.
 
 =head1 METHODS
 
@@ -57,11 +57,11 @@ TODO
 
 =over
 
-=item L<Wikibase::WQS::SPARQL::Query::Count>
+=item L<WQS::SPARQL::Query::Count>
 
-Simple SPARQL Wikibase count query.
+Simple SPARQL count query.
 
-=item L<Wikibase::WQS::SPARQL::Query::Select>
+=item L<WQS::SPARQL::Query::Select>
 
 TODO
 
@@ -69,7 +69,7 @@ TODO
 
 =head1 REPOSITORY
 
-L<https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL-Result>
+L<https://github.com/michal-josef-spacek/WQS-SPARQL-Result>
 
 =head1 AUTHOR
 

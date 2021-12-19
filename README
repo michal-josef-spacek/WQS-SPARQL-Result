@@ -1,16 +1,18 @@
 NAME
-    Wikibase::WQS::SPARQL::Result - Processing Wikidata Query Service SPARQL
-    result.
+    WQS::SPARQL::Result - Processing Wikidata Query Service SPARQL result.
+
+METHODS
+    TODO
 
 SEE ALSO
-    Wikibase::WQS::SPARQL::Query::Count
-        Simple SPARQL Wikibase count query.
+    WQS::SPARQL::Query::Count
+        Simple SPARQL count query.
 
-    Wikibase::WQS::SPARQL::Query::Select
+    WQS::SPARQL::Query::Select
         TODO
 
 REPOSITORY
-    <https://github.com/michal-josef-spacek/Wikibase-WQS-SPARQL-Result>
+    <https://github.com/michal-josef-spacek/WQS-SPARQL-Result>
 
 AUTHOR
     Michal Josef Špaček <mailto:skim@cpan.org>
