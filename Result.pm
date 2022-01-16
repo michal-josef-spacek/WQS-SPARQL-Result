@@ -22,15 +22,30 @@ sub new {
 }
 
 sub result {
-	my ($self, $result_hr) = @_;
+	my ($self, $result_hr, $vars_ar) = @_;
+
+	if (! defined $vars_ar) {
+		$vars_ar = $result_hr->{'head'}->{'vars'};
+	}
 
 	my @res;
 	if (exists $result_hr->{'results'}->{'bindings'}) {
 		my @items = @{$result_hr->{'results'}->{'bindings'}};
 		foreach my $item_hr (@items) {
-			my $qid_uri = URI->new($item_hr->{'item'}->{'value'});
-			my @segs = $qid_uri->path_segments;
-			push @res, $segs[-1];
+			my $result_hr;
+			foreach my $var (@{$vars_ar}) {
+
+				# TODO Implement other values
+
+				# QID.
+				# TODO Check real QID, could be another uri.
+				if ($item_hr->{$var}->{'type'} eq 'uri') {
+					my $qid_uri = URI->new($item_hr->{$var}->{'value'});
+					my @segs = $qid_uri->path_segments;
+					$result_hr->{$var} = $segs[-1];
+				}
+			}
+			push @res, $result_hr;
 		}
 	}
 

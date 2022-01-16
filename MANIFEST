@@ -16,6 +16,7 @@ META.yml
 README
 Result.pm
 t/data/result1.json
+t/data/result2.json
 t/WQS-SPARQL-Result/01-use.t
 t/WQS-SPARQL-Result/02-version.t
 t/WQS-SPARQL-Result/03-new.t
