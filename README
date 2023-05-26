@@ -9,7 +9,7 @@ SEE ALSO
         Simple SPARQL count query.
 
     WQS::SPARQL::Query::Select
-        TODO
+        Simple SPARQL select query.
 
 REPOSITORY
     <https://github.com/michal-josef-spacek/WQS-SPARQL-Result>

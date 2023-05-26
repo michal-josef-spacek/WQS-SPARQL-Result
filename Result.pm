@@ -78,7 +78,7 @@ Simple SPARQL count query.
 
 =item L<WQS::SPARQL::Query::Select>
 
-TODO
+Simple SPARQL select query.
 
 =back
 
