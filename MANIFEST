@@ -16,6 +16,7 @@ MANIFEST			This list of files
 META.yml
 README
 Result.pm
+SIGNATURE
 t/data/result1.json
 t/data/result2.json
 t/WQS-SPARQL-Result/01-use.t
