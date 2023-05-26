@@ -20,6 +20,7 @@ readme_from 'Result.pm';
 recursive_author_tests('xt');
 requires 'Class::Utils' => 0.03;
 requires 'Error::Pure' => 0.15;
+requires 'URI' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/WQS-SPARQL-Result/issues',
 resources 'homepage' => 'https://github.com/michal-josef-spacek/WQS-SPARQL-Result';
 resources 'repository' => 'git://github.com/michal-josef-spacek/WQS-SPARQL-Result';
