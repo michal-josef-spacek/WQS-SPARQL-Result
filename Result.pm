@@ -64,9 +64,52 @@ __END__
 
 WQS::SPARQL::Result - Processing Wikidata Query Service SPARQL result.
 
+=head1 SYNOPSIS
+
+ use WQS::SPARQL::Result;
+
+ my $obj = WQS::SPARQL::Result->new;
+ my @res = $obj->result($result_hr, $vars_ar);
+
+=head1 DESCRIPTION
+
+Class which gets structure which is originally JSON result from Wikidata Query
+Service and parse values from it.
+
 =head1 METHODS
 
-TODO
+=head2 C<new>
+
+ my $obj = WQS::SPARQL::Result->new;
+
+Constructor.
+
+Returns instance of class.
+
+=head2 C<result>
+
+ my @res = $obj->result($result_hr, $vars_ar);
+
+Select variables from structures and return list.
+
+Variables:
+
+ C<$result_hr> - Structure converted from JSON string.
+ C<$vars_ar> - Reference to array with keys, which we need to return.
+
+Returns list of structures with key => value pairs.
+
+=head1 ERRORS
+
+ new():
+         From Class::Utils::set_params():
+                 Unknown parameter '%s'.
+
+=head1 DEPENDENCIES
+
+L<Class::Utils>,
+L<Error::Pure>,
+L<URI>.
 
 =head1 SEE ALSO
 
