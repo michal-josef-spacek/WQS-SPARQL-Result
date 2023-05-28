@@ -54,6 +54,9 @@ sub result {
 					my $qid_uri = URI->new($item_hr->{$var}->{'value'});
 					my @segs = $qid_uri->path_segments;
 					$result_hr->{$var} = $segs[-1];
+				} elsif ($item_hr->{$var}->{'type'} eq 'literal') {
+					# TODO Lang?
+					$result_hr->{$var} = $item_hr->{$var}->{'value'};
 				}
 			}
 			push @res, $result_hr;

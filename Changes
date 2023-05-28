@@ -1,5 +1,6 @@
 0.03
  - Add example to doc.
+ - Support result literal.
 
 0.02 2023-05-28T10:38:39+02:00
  - Add verbose parameter, which dumps result JSON structure.
