@@ -1,4 +1,4 @@
-0.02
+0.02 2023-05-28T10:38:39+02:00
  - Add verbose parameter, which dumps result JSON structure.
  - Skip result variables, which doesn't exist.
 
