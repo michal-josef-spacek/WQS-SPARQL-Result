@@ -34,6 +34,9 @@ sub result {
 		foreach my $item_hr (@items) {
 			my $result_hr;
 			foreach my $var (@{$vars_ar}) {
+				if (! exists $item_hr->{$var}) {
+					next;
+				}
 
 				# TODO Implement other values
 

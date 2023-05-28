@@ -1,4 +1,5 @@
 0.02
+ - Skip result variables, which doesn't exist.
 
 0.01 2023-05-26T10:21:33+02:00
  - First version.
