@@ -15,6 +15,9 @@ sub new {
 	# Create object.
 	my $self = bless {}, $class;
 
+	# Verbose mode.
+	$self->{'verbose'} = 0;
+
 	# Process parameters.
 	set_params($self, @params);
 
@@ -26,6 +29,11 @@ sub result {
 
 	if (! defined $vars_ar) {
 		$vars_ar = $result_hr->{'head'}->{'vars'};
+	}
+
+	if ($self->{'verbose'}) {
+		require Data::Printer;
+		Data::Printer::p($result_hr);
 	}
 
 	my @res;
@@ -87,6 +95,16 @@ Service and parse values from it.
 
 Constructor.
 
+=over 8
+
+=item * C<verbose>
+
+Verbose module flag. If enabled dumps result JSON structure to STDERR.
+
+Default value is 0.
+
+=back
+
 Returns instance of class.
 
 =head2 C<result>
@@ -111,6 +129,7 @@ Returns list of structures with key => value pairs.
 =head1 DEPENDENCIES
 
 L<Class::Utils>,
+L<Data::Printer>,
 L<Error::Pure>,
 L<URI>.
 
