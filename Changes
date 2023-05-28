@@ -1,4 +1,5 @@
 0.03
+ - Add error for unsupported result types.
  - Add example to doc.
  - Support result literal.
 

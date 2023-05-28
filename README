@@ -43,6 +43,9 @@ ERRORS
              From Class::Utils::set_params():
                      Unknown parameter '%s'.
 
+     result():
+             Type '%s' doesn't supported.
+
 EXAMPLE
      use strict;
      use warnings;

@@ -57,6 +57,8 @@ sub result {
 				} elsif ($item_hr->{$var}->{'type'} eq 'literal') {
 					# TODO Lang?
 					$result_hr->{$var} = $item_hr->{$var}->{'value'};
+				} else {
+					err "Type '".$item_hr->{$var}->{'type'}."' doesn't supported.";
 				}
 			}
 			push @res, $result_hr;
@@ -128,6 +130,9 @@ Returns list of structures with key => value pairs.
  new():
          From Class::Utils::set_params():
                  Unknown parameter '%s'.
+
+ result():
+         Type '%s' doesn't supported.
 
 =head1 EXAMPLE
 
