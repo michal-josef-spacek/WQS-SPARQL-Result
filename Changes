@@ -1,4 +1,4 @@
-0.03
+0.03 2023-05-28T15:11:10+02:00
  - Add error for unsupported result types.
  - Add example to doc.
  - Add tests.
