@@ -31,10 +31,13 @@ METHODS
 
     Select variables from structures and return list.
 
-    Variables:
+    Method arguments:
 
-     C<$result_hr> - Structure converted from JSON string.
-     C<$vars_ar> - Reference to array with keys, which we need to return.
+    $result_hr
+            Structure converted from JSON string.
+
+    $vars_ar
+            Reference to array with keys, which we need to return.
 
     Returns list of structures with key => value pairs.
 

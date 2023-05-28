@@ -118,10 +118,19 @@ Returns instance of class.
 
 Select variables from structures and return list.
 
-Variables:
+Method arguments:
 
- C<$result_hr> - Structure converted from JSON string.
- C<$vars_ar> - Reference to array with keys, which we need to return.
+=over 8
+
+=item C<$result_hr>
+
+Structure converted from JSON string.
+
+=item C<$vars_ar>
+
+Reference to array with keys, which we need to return.
+
+=back
 
 Returns list of structures with key => value pairs.
 
